@@ -5,6 +5,6 @@
 
 test -f ~/.tmux.conf && echo ".tmux.conf already exist!" && exit 1
 
-test -f ./.tmux.conf && ln ./.tmux.conf ~/.tmux.conf && echo "tmux install
+test -f ./.tmux.conf && ln ./.tmux.conf -sf ~/.tmux.conf && echo "tmux install
 success!" && exit 0
 echo "tmux install failed!" && exit 1
